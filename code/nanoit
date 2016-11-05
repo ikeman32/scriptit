@@ -1,0 +1,23 @@
+ #!/bin/bash
+           OPTIONS="Sources Interfaces Environment Quit"
+           select opt in $OPTIONS; do
+               if [ "$opt" = "Quit" ]; then
+                echo done
+                exit
+               elif [ "$opt" = "Sources" ]; then
+                sudo nano /etc/apt/sources.list
+				clear
+				break
+			   elif [ "$opt" = "Interfaces" ]; then
+                sudo nano /etc/network/interfaces
+				clear
+				break
+			   elif [ "$opt" = "Environment" ]; then
+                sudo nano /etc/environment
+				clear
+				break
+               else
+                clear
+                echo bad option
+               fi
+           done

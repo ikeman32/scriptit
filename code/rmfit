@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+read -p "Input foldername " var #variable name
+sudo rm -r $var

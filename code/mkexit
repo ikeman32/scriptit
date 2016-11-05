@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+read -p "File to make executable " var #variable name
+chmod +x $var

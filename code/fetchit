@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+read -p "App to fetch " app
+sudo apt-get install $app

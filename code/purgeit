@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+read -p "App to purge " var #variable name
+sudo apt-get purge $var

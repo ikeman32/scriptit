@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#read -p "Instructions here " var #variable name
+sudo apt-get update

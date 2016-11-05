@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+read -p "Repository or PPA to add" var #variable name
+sudo add-apt-repository $var
+updateit
