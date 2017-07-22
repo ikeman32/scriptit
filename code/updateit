@@ -2,5 +2,7 @@
 #read -p "Instructions here " var #variable name
 if cat /etc/*-release | grep 'Arch Linux' #check if system is arch linux 
   then sudo pacman -Syyu #if yes update it else assuming its debian based ( not thinking of fedoras)
+  elif cat /etc/*-release | grep 'Antergos Linux' #check i system is antergos linux
+  then sudo pacman -Syyuu
   else sudo apt-get update # should add conditions for debian type too
 fi
